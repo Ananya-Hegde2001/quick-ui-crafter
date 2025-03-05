@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import SearchSection from '@/components/SearchSection';
 import TrendingCategories from '@/components/TrendingCategories';
 import FeaturedCompanies from '@/components/FeaturedCompanies';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -16,6 +17,8 @@ const Index = () => {
           <TrendingCategories />
           <FeaturedCompanies />
         </main>
+        
+        <Footer />
       </div>
     </div>
   );
