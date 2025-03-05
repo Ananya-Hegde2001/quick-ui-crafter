@@ -11,7 +11,7 @@ const Index: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto">
         <Navbar />
         
-        <main>
+        <main className="mt-6">
           <SearchSection />
           <TrendingCategories />
           <FeaturedCompanies />
