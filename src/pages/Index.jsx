@@ -8,8 +8,8 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-screen-2xl mx-auto">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="max-w-screen-2xl mx-auto w-full flex-1">
         <Navbar />
         
         <main className="mt-6">
@@ -17,9 +17,9 @@ const Index = () => {
           <TrendingCategories />
           <FeaturedCompanies />
         </main>
-        
-        <Footer />
       </div>
+      
+      <Footer />
     </div>
   );
 };
