@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add animation keyframes for fade-in and fade-in-up */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animations using utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Naukri custom colors */
+:root {
+  --naukri-blue: #4a7aff;
+  --naukri-green: #14a800;
+}
+
+.text-naukri-blue {
+  color: var(--naukri-blue);
+}
+
+.bg-naukri-blue {
+  background-color: var(--naukri-blue);
+}
+
+.border-naukri-blue {
+  border-color: var(--naukri-blue);
+}
+
+.text-naukri-green {
+  color: var(--naukri-green);
+}
+
+.bg-naukri-green {
+  background-color: var(--naukri-green);
+}
+
+.hover\:text-naukri-blue:hover {
+  color: var(--naukri-blue);
+}
+
+.hover\:bg-naukri-blue\/10:hover {
+  background-color: rgba(74, 122, 255, 0.1);
+}
+
+.hover\:bg-naukri-blue\/90:hover {
+  background-color: rgba(74, 122, 255, 0.9);
+}
+
+.hover\:bg-naukri-green\/90:hover {
+  background-color: rgba(20, 168, 0, 0.9);
+}
