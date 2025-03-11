@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
@@ -91,47 +90,6 @@ const Navbar: React.FC = () => {
             
             <div className="py-6">
               {activeTab === 'categories' && (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4">
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Mathematics Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">English Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Biology Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Science Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Hindi Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Social Science Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Physics Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Chemistry Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Assistant Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Computer Science Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">History Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Computer Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Commerce Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Economics Teacher Jobs</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Accountancy Teacher Jobs</a>
-                </div>
-              )}
-              
-              {activeTab === 'locations' && (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4">
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Bangalore</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Pune</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Chennai</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Kolkata</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Hyderabad</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Ahmedabad</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Mumbai</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Jaipur</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Lucknow</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Delhi</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Indore</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Bhubaneswar</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Coimbatore</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Patna</a>
-                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Agra</a>
-                </div>
-              )}
-              
-              {activeTab === 'designations' && (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                   <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
                     <img src="/lovable-uploads/cd2dba27-a213-4074-af68-7ff38442f017.png" alt="Coaching" className="h-12 w-12 mb-2 text-yellow-500" />
@@ -163,6 +121,47 @@ const Navbar: React.FC = () => {
                     <h3 className="font-medium">Vocational Training Institute</h3>
                     <p className="text-sm text-gray-500">153 Jobs</p>
                   </div>
+                </div>
+              )}
+              
+              {activeTab === 'locations' && (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4">
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Bangalore</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Pune</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Chennai</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Kolkata</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Hyderabad</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Ahmedabad</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Mumbai</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Jaipur</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Lucknow</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Delhi</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Indore</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Bhubaneswar</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Coimbatore</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Patna</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher jobs in Agra</a>
+                </div>
+              )}
+              
+              {activeTab === 'designations' && (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4">
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Mathematics Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">English Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Biology Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Science Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Hindi Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Social Science Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Physics Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Chemistry Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Assistant Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Computer Science Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">History Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Computer Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Commerce Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Economics Teacher Jobs</a>
+                  <a href="#" className="text-gray-700 hover:text-naukri-blue">Accountancy Teacher Jobs</a>
                 </div>
               )}
             </div>
