@@ -1,17 +1,18 @@
 
 import React, { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
-  const router = useRouter();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
-      router.asPath
+      location.pathname
     );
-  }, [router.asPath]);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
