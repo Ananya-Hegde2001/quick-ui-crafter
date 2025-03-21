@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
@@ -132,34 +131,28 @@ const Navbar = () => {
               )}
               
               {activeTab === 'designations' && (
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/cd2dba27-a213-4074-af68-7ff38442f017.png" alt="Coaching" className="h-12 w-12 mb-2 text-yellow-500" />
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">Coaching</h3>
                     <p className="text-sm text-gray-500">1905 Jobs</p>
                   </div>
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/562130bd-7449-42d3-8ad5-c53e55c75771.png" alt="School" className="h-12 w-12 mb-2 text-yellow-500" />
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">School</h3>
                     <p className="text-sm text-gray-500">5277 Jobs</p>
                   </div>
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/bdc47d8b-43d7-41e4-90f2-9e4a79fbba74.png" alt="Pre-School" className="h-12 w-12 mb-2 text-yellow-500" />
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">Pre-School</h3>
                     <p className="text-sm text-gray-500">503 Jobs</p>
                   </div>
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/cd2dba27-a213-4074-af68-7ff38442f017.png" alt="EdTech" className="h-12 w-12 mb-2 text-yellow-500" />
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">EdTech</h3>
                     <p className="text-sm text-gray-500">963 Jobs</p>
                   </div>
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/562130bd-7449-42d3-8ad5-c53e55c75771.png" alt="College/University" className="h-12 w-12 mb-2 text-yellow-500" />
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">College/University</h3>
                     <p className="text-sm text-gray-500">4335 Jobs</p>
                   </div>
-                  <div className="flex flex-col items-center p-4 rounded-lg bg-gray-50">
-                    <img src="/lovable-uploads/bdc47d8b-43d7-41e4-90f2-9e4a79fbba74.png" alt="Vocational Training Institute" className="h-12 w-12 mb-2 text-yellow-500" />
+                  <div className="p-4 rounded-lg bg-gray-50 text-center">
                     <h3 className="font-medium">Vocational Training Institute</h3>
                     <p className="text-sm text-gray-500">153 Jobs</p>
                   </div>
